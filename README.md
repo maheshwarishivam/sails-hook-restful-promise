@@ -15,7 +15,7 @@ npm install --save sails-hook-restful-promise
 sails.hooks.restful
             .send(options)
             .then(function (response) {
-                console.log("response", response);
+                console.log(response);
             })
             .catch(function (err) {
                 console.error(err);
@@ -32,3 +32,19 @@ Where `options` is an `Object`, which can have the following keys (all optional)
 * **`headers`**: (`Object`) Any custom HTTP Headers to send in key value notation. e.g.: `{'Content-Type': 'application/json'}`
 * **`timeout`**: (`Number`) The HTTP API call timeout in milliseconds (Defaults to `0`, which means no timeout)
 * **`returnHeaders`**: (`Boolean`) Weather to return HTTP Headers as received from the API Response. Default is `false`
+
+## Response format
+
+If the API call is successful (no matter what the HTTP Status or the response is), the promise resolves with the response object in the following format:
+
+````
+{
+    status: 200,
+    body: 'The exact body returned by the API Response in String format'
+    headers: {
+        //Key: 'Value' pairs of all headers retirned by the server.
+    }
+}
+````
+
+**Note:** `headers` is only available when `returnHeaders` is set to true in `request.options`.

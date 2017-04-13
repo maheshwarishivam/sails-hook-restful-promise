@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/maheshwarishivam/sails-hook-restful-promise.git"
+    "url": "git+https://github.com/maheshwarishivam/sails-hook-restful-promise.git"
   },
   "keywords": [
     "sails",

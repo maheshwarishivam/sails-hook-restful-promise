@@ -78,10 +78,6 @@ module.exports = function RESTful(sails) {
 
                 const request = lib.request(opt, (response) => {
 
-                    // handle http errors
-                    // if (response.statusCode < 200 || response.statusCode > 299) {
-                    //     reject(new Error('Failed to load page, status code: ' + response.statusCode));
-                    // }
                     // temporary data holder
                     const body = [];
                     // on every content chunk, push it to the data array
@@ -89,6 +85,7 @@ module.exports = function RESTful(sails) {
                     // we are done, resolve promise with those joined chunks
                     response.on('end', () => {
                         var retValue = {
+                            status: response.statusCode,
                             body: body.join('')
                         };
                         if (returnHeaders) retValue['headers'] = response.headers;
