@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-restful-promise",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Sails JS hook to communicate with RESTful APIs (HTTP/HTTPS) and return a Promise without a single external dependency",
   "main": "index.js",
   "sails": {
