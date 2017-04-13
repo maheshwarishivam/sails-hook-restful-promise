@@ -1,0 +1,38 @@
+{
+  "name": "sails-hook-restful-promise",
+  "version": "0.0.1",
+  "description": "Sails JS hook to communicate with RESTful APIs (HTTP/HTTPS) and return a Promise without a single external dependency",
+  "main": "index.js",
+  "sails": {
+    "isHook": true,
+    "hookName": "RESTful"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maheshwarishivam/sails-hook-restful-promise.git"
+  },
+  "keywords": [
+    "sails",
+    "sails.js",
+    "sails-hook",
+    "rest",
+    "restful",
+    "web-service",
+    "web",
+    "service",
+    "http",
+    "https",
+    "promise",
+    "http-promise",
+    "https-promise"
+  ],
+  "author": "Shivam Maheshwari (http://www.shivammaheshwari.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maheshwarishivam/sails-hook-restful-promise/issues"
+  },
+  "homepage": "https://github.com/maheshwarishivam/sails-hook-restful-promise#readme"
+}
