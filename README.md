@@ -12,7 +12,7 @@ npm install --save sails-hook-restful-promise
 ## Usage
 
 ````
-sails.hooks.restful
+sails.hooks.RESTful
             .send(options)
             .then(function (response) {
                 console.log(response);
@@ -48,3 +48,18 @@ If the API call is successful (no matter what the HTTP Status or the response is
 ````
 
 **Note:** `headers` is only available when `returnHeaders` is set to true in `request.options`.
+
+## Defining Defaults
+Following `options` can be defined as defaults from the `sails.config`. Just add a `config/restful.js` file in your `sails` installation with following content:
+
+````
+module.exports.RESTful = {
+    protocol: 'http', // Only 'http' or 'https' allowed here
+    hostname: 'localhost',
+    portHTTP: 80,
+    portHTTPS: 443,
+    headers: {}, //Any custom HTTP Headers to send in key value notation. e.g.: {'Content-Type': 'application/json'}
+    timeout: 0, //If positive, in milliseconds. 0 means don't set timeout
+    returnHeaders: false //Weather to return HTTP Headers as received from the API Response
+}
+````
