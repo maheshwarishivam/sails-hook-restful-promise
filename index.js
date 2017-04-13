@@ -24,16 +24,16 @@ module.exports = function RESTful(sails) {
          *
          * @param options (Object)
          *      {
-         *          protocol: (String) `http` or `https` (Default is `http`)
-         *          host: (String) The API endpoint (Default is `localhost`)
-         *          port: (Number) The API port (Default is `80` for `http` and `443` for `https`)
-         *          path: (String) The API Path (Default is empty path)
-         *          body: (String) The API request body (if any) (Default is empty body)
-         *          qs: (Object) The Query String in key value notation. e.g.: `{q:'foo',s='bar'}` means `?q=foo&s=bar`
-         *          method: The HTTP Method (Defaults to `GET`)
-         *          headers: (Object) Any custom HTTP Headers to send in key value notation. e.g.: `{'Content-Type': 'application/json'}`
-         *          timeout: (Number) The HTTP API call timeout in milliseconds (Defaults to -1, which means no timeout)
-         *          returnHeaders: (Boolean) Weather to return HTTP Headers as received from the API Response. Default is `false`
+         *          `protocol`: (`String`) `http` or `https` (Default is `http`)
+         *          `host`: (`String`) The API endpoint (Default is `localhost`)
+         *          `port`: (`Number`) The API port (Default is `80` for `http` and `443` for `https`)
+         *          `path`: (`String`) The API Path (Default is empty path)
+         *          `body`: (`String`) The API request body (if any) (Default is empty body)
+         *          `qs`: (`Object`) The Query String in key value notation. e.g.: `{q:'foo',s='bar'}` means `?q=foo&s=bar`
+         *          `method`: (`String`) The HTTP Method (Defaults to `GET`)
+         *          `headers`: (`Object`) Any custom HTTP Headers to send in key value notation. e.g.: `{'Content-Type': 'application/json'}`
+         *          `timeout`: (`Number`) The HTTP API call timeout in milliseconds (Defaults to `0`, which means no timeout)
+         *          `returnHeaders`: (`Boolean`) Weather to return HTTP Headers as received from the API Response. Default is `false`
          *      }
          */
         send: function (options) {

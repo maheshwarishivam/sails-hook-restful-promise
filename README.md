@@ -3,6 +3,12 @@ Sails JS hook to communicate with RESTful APIs (HTTP/HTTPS) and returns a Promis
 
 All this **without even a single external dependency**
 
+## Installation
+
+````
+npm install --save sails-hook-restful-promise
+````
+
 ## Usage
 
 ````
@@ -26,4 +32,3 @@ Where `options` is an `Object`, which can have the following keys (all optional)
 * **`headers`**: (`Object`) Any custom HTTP Headers to send in key value notation. e.g.: `{'Content-Type': 'application/json'}`
 * **`timeout`**: (`Number`) The HTTP API call timeout in milliseconds (Defaults to `0`, which means no timeout)
 * **`returnHeaders`**: (`Boolean`) Weather to return HTTP Headers as received from the API Response. Default is `false`
-
