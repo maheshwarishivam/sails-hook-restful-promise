@@ -23,7 +23,7 @@ sails.hooks.RESTful
 ````
 Where `options` is an `Object`, which can have the following keys (all optional):
 * **`protocol`**: (`String`) `http` or `https` (Default is `http`)
-* **`host`**: (`String`) The API endpoint (Default is `localhost`)
+* **`hostname`**: (`String`) The API endpoint (Default is `localhost`)
 * **`port`**: (`Number`) The API port (Default is `80` for `http` and `443` for `https`)
 * **`path`**: (`String`) The API Path (Default is empty path)
 * **`body`**: (`String`) The API request body (if any) (Default is empty body)
